@@ -41,19 +41,68 @@ export default function IntelligenceLayer() {
       {NODES.map(([l, t]) => (
         <img key={`${l}-${t}`} className="abs" src={ellipse6} alt="" width={8.83} height={8.83} style={{ left: l, top: t, width: 8.83, height: 8.83 }} />
       ))}
-      <p className="abs" style={{ left: 167, top: 2062, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "Inria Serif, serif", fontStyle: "italic", fontWeight: 700, fontSize: 37, lineHeight: 1.36 }}>
+      <p className="abs" style={{ left: 167, top: 2062, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "Inria Serif, serif", fontStyle: "italic", fontWeight: 700, fontSize: 34, lineHeight: 1.36 }}>
         Finding a signal in the noise!
       </p>
 
-      <div className="abs" style={{ left: 267, top: 1864, width: 243.393, height: 101, background: "#f7f8e9", border: "0.828px solid #c8c8a1", borderRadius: 4.967, padding: "12px 24px" }}>
-        <div style={{ fontSize: 15.172, fontWeight: 700 }}>NEW OPPORTUNITY</div>
-        <div style={{ marginTop: 16, fontSize: 13.792, fontWeight: 600, color: "#1e4a79" }}>Paid search | high intent</div>
-        <div style={{ fontSize: 13.792, fontWeight: 300 }}>+18% projected conversions lift</div>
+      <div
+        className="abs"
+        style={{
+          left: 267,
+          top: 1864,
+          width: 243.393,
+          height: 101,
+          background: "#f7f8e9",
+          border: "0.828px solid #c8c8a1",
+          borderRadius: 4.967,
+          overflow: "visible",
+        }}
+      >
+        <div
+          className="muted"
+          style={{
+            position: "absolute",
+            left: 24.83,
+            top: 12.41,
+            whiteSpace: "nowrap",
+            lineHeight: 1.36,
+          }}
+        >
+          <div style={{ fontSize: 14, fontWeight: 700 }}>NEW OPPORTUNITY</div>
+          <div style={{ height: 18.01 }} />
+          <div style={{ fontSize: 12, fontWeight: 600, color: "#1e4a79" }}>Paid search | high intent</div>
+          <div style={{ fontSize: 12, fontWeight: 300 }}>+18% projected conversions lift</div>
+        </div>
       </div>
-      <div className="abs" style={{ left: 84, top: 2312, width: 231.984, height: 89, background: "#f7f8e9", border: "0.73px solid #c8c8a1", borderRadius: 4.377, boxShadow: "2.918px 2.918px 5.836px rgba(0,0,0,0.1)", padding: "11px 13px" }}>
-        <div style={{ fontSize: 13.369, fontWeight: 700 }}>CREATIVE FATIGUE</div>
-        <div style={{ marginTop: 14, fontSize: 12.154, fontWeight: 600, color: "#1e4a79" }}>Meta / Summer campaign</div>
-        <div style={{ fontSize: 12.154, fontWeight: 300 }}>Refresh recommended within 5 days</div>
+      <div
+        className="abs"
+        style={{
+          left: 84,
+          top: 2312,
+          width: 231.984,
+          height: 89,
+          background: "#f7f8e9",
+          border: "0.73px solid #c8c8a1",
+          borderRadius: 4.377,
+          boxShadow: "2.918px 2.918px 5.836px rgba(0,0,0,0.1)",
+          overflow: "visible",
+        }}
+      >
+        <div
+          className="muted"
+          style={{
+            position: "absolute",
+            left: 13.37,
+            top: 11,
+            whiteSpace: "nowrap",
+            lineHeight: 1.36,
+          }}
+        >
+          <div style={{ fontSize: 12, fontWeight: 700 }}>CREATIVE FATIGUE</div>
+          <div style={{ height: 15.87 }} />
+          <div style={{ fontSize: 11, fontWeight: 600, color: "#1e4a79" }}>Meta / Summer campaign</div>
+          <div style={{ fontSize: 11, fontWeight: 300 }}>Refresh recommended within 5 days</div>
+        </div>
       </div>
 
       <img className="abs" src={vector10} alt="" width={84} height={88} style={{ left: 461, top: 1978, width: 84, height: 88, transform: "scaleY(-1) rotate(180deg)" }} />
@@ -68,26 +117,26 @@ export default function IntelligenceLayer() {
       ))}
 
       <Crop src={meta} box={{ left: 559.35, top: 1965.58, width: 85.286, height: 16.716 }} imgStyle={{ height: "286.73%", left: 0, top: "-94.9%", width: "100%" }} alt="Meta" />
-      <span className="abs muted" style={{ left: 656.48, top: 1968.89, fontSize: 13.246 }}>Ads</span>
+      <span className="abs muted" style={{ left: 656.48, top: 1968.89, fontSize: 13 }}>Ads</span>
       <Crop src={google} box={{ left: 559.35, top: 2026.29, width: 94.928, height: 25.388 }} imgStyle={{ height: "100%", left: "-17.57%", top: 0, width: "118.86%" }} alt="Google" />
-      <span className="abs muted" style={{ left: 656.48, top: 2030.7, fontSize: 13.246 }}>Ads</span>
+      <span className="abs muted" style={{ left: 656.48, top: 2030.7, fontSize: 13 }}>Ads</span>
       <Crop src={hubspot} box={{ left: 559.35, top: 2093.62, width: 80.271, height: 21.859 }} imgStyle={{ height: "206.56%", left: 0, top: "-50.82%", width: "100%" }} alt="HubSpot" />
       <Crop src={shopify} box={{ left: 557.14, top: 2154.33, width: 99.032, height: 29.897 }} imgStyle={{ height: "368.35%", left: "-5.66%", top: "-134.71%", width: "111.32%" }} alt="Shopify" />
       <Crop src={salesforce} box={{ left: 559.35, top: 2226.08, width: 88.687, height: 17.806 }} imgStyle={{ height: "371.15%", left: "-19.31%", top: "-203.85%", width: "138.22%" }} alt="Salesforce" />
       <Crop src={tiktok} box={{ left: 557, top: 2287, width: 70, height: 23 }} imgStyle={{ height: "170.59%", left: "-0.4%", top: "-35.29%", width: "100.8%" }} alt="TikTok" />
-      <span className="abs muted" style={{ left: 656.48, top: 2292, fontSize: 13.246 }}>Ads</span>
+      <span className="abs muted" style={{ left: 656.48, top: 2292, fontSize: 13 }}>Ads</span>
 
-      <p className="abs muted" style={{ left: 1070, top: 1980, width: 307, margin: 0, textAlign: "right", fontSize: 15, fontWeight: 300 }}>BUILT FOR THE MODERN MARKETING STACK</p>
-      <h2 className="abs navy" style={{ left: 772, top: 2032, width: 605, margin: 0, textAlign: "right", fontSize: 57.626, fontWeight: 500, lineHeight: 0.9 }}>
+      <p className="abs muted" style={{ left: 1070, top: 1980, width: 307, margin: 0, textAlign: "right", fontSize: 14, fontWeight: 300 }}>BUILT FOR THE MODERN MARKETING STACK</p>
+      <h2 className="abs navy" style={{ left: 772, top: 2032, width: 605, margin: 0, textAlign: "right", fontSize: 52, fontWeight: 500, lineHeight: 0.95 }}>
         One Intelligence layer
         <br />
         <span className="serif">across every channel</span>
       </h2>
-      <p className="abs muted" style={{ left: 900, top: 2166, width: 477, margin: 0, textAlign: "right", fontSize: 20, fontWeight: 300, lineHeight: 1.36 }}>
+      <p className="abs muted" style={{ left: 900, top: 2166, width: 477, margin: 0, textAlign: "right", fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>
         Meta Ads is only the beginning. AI gent Z connects the performance, commerce, and customer signals your team already uses.
       </p>
       <div className="abs" style={{ left: 630, top: 2392, width: 749, height: 28, borderRadius: 15, background: "#ebf1f8", display: "flex", alignItems: "center", paddingLeft: 11 }}>
-        <p style={{ margin: 0, fontSize: 15, fontStyle: "italic", fontWeight: 400 }}>Google, HubSpot, Shopify, Salesforce, and TikTok ad integrations are coming soon (only Meta Ads is live).</p>
+        <p style={{ margin: 0, fontSize: 14, fontStyle: "italic", fontWeight: 400 }}>Google, HubSpot, Shopify, Salesforce, and TikTok ad integrations are coming soon (only Meta Ads is live).</p>
       </div>
     </section>
   );

@@ -28,9 +28,9 @@ export default function MeasurableUpside() {
           width: 1106,
           margin: 0,
           textAlign: "center",
-          fontSize: 50,
+          fontSize: 46,
           fontWeight: 500,
-          lineHeight: 0.9,
+          lineHeight: 0.95,
         }}
       >
         Give your next decision{" "}
@@ -46,9 +46,9 @@ export default function MeasurableUpside() {
           width: 1106,
           margin: 0,
           textAlign: "center",
-          fontSize: 20,
+          fontSize: 17,
           fontWeight: 300,
-          lineHeight: 1.36,
+          lineHeight: 1.4,
         }}
       >
         AI gent Z turns fragmented marketing signals into actionable growth opportunities. It continuously detects where to scale, optimize, fix, and reallocate—giving your team the insight to make smarter decisions and the confidence to act on them.
@@ -65,8 +65,8 @@ export default function MeasurableUpside() {
             textAlign: "center",
           }}
         >
-          <div style={{ fontSize: 40, fontWeight: stat.valueWeight, lineHeight: 1.36 }}>{stat.value}</div>
-          <div style={{ fontSize: 20, fontWeight: 300, lineHeight: 1.36 }}>{stat.label}</div>
+          <div style={{ fontSize: 36, fontWeight: stat.valueWeight, lineHeight: 1.36 }}>{stat.value}</div>
+          <div style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.36 }}>{stat.label}</div>
         </div>
       ))}
 
@@ -91,7 +91,7 @@ export default function MeasurableUpside() {
           width: 209,
           height: 42,
           borderRadius: 39.456,
-          fontSize: 20.501,
+          fontSize: 19,
           fontWeight: 800,
           color: "#fafafa",
           boxShadow: "2.077px 2.077px 6.126px rgba(0,0,0,0.1)",

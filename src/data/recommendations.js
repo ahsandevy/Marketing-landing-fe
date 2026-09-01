@@ -32,7 +32,7 @@ export const RECS = [
     confidence: "75% Confidence",
     risk: "Medium Risk",
     lift: "+420 USD",
-    title: "Refresh the Instagram “COZY” creative to lift CTR",
+    title: 'Refresh the Instagram "COZY" creative to lift CTR',
     insight: "CTR is 1.43%, below the account average of 7.13%. Change the headline and imagery before fatigue compounds.",
     owner: "Owner: Creative Team",
     check: "Next check: 7 days",

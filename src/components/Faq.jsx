@@ -1,41 +1,49 @@
 import { useState } from "react";
 import { FAQS } from "../data/faqs.js";
 
-const TOPS = [4314, 4435, 4482, 4529, 4576, 4623];
-
 export default function Faq() {
   const [openFaq, setOpenFaq] = useState(0);
 
   return (
-    <section>
-      <p className="abs muted" style={{ left: 66, top: 4295, margin: 0, fontSize: 15, fontWeight: 300 }}>FAQ Section</p>
-      <h2 className="abs navy" style={{ left: 66, top: 4334, width: 439, margin: 0, fontSize: 50, fontWeight: 700, lineHeight: 0.9 }}>Frequently Asked Question</h2>
-      <p className="abs muted" style={{ left: 66, top: 4443, width: 561, margin: 0, fontSize: 20, fontWeight: 300, lineHeight: 1.36 }}>
-        Quick answers about AIgent Z — integrations, recommendations, and how it helps marketing teams decide faster, without the guesswork.
-      </p>
+    <section id="faq" className="faq-section">
+      <div className="faq-intro">
+        <p className="muted" style={{ margin: 0, fontSize: 14, fontWeight: 300 }}>FAQ Section</p>
+        <h2 className="navy" style={{ margin: "20px 0 0", fontSize: 46, fontWeight: 700, lineHeight: 0.95 }}>
+          Frequently Asked Questions
+        </h2>
+        <p className="muted" style={{ margin: "28px 0 0", width: 561, fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>
+          Find quick answers about AIgent Z, its AI agents, integrations, and how it helps marketing teams make faster, smarter decisions with less manual effort.
+        </p>
+      </div>
 
-      {FAQS.map((item, i) => {
-        const open = openFaq === i;
-        return (
-          <div key={item.q} className="abs" style={{ left: 721, top: TOPS[i], width: 646 }}>
-            <button className="faq-row" type="button" onClick={() => setOpenFaq(open ? -1 : i)} aria-expanded={open}>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", gap: 16 }}>
-                <p className="navy" style={{ margin: 0, fontSize: 20, width: 603 }}>
+      <div className="faq-list">
+        {FAQS.map((item, i) => {
+          const open = openFaq === i;
+          return (
+            <div key={item.q} className="faq-item">
+              <button
+                className="faq-row"
+                type="button"
+                onClick={() => setOpenFaq(open ? -1 : i)}
+                aria-expanded={open}
+                aria-controls={`faq-panel-${i}`}
+              >
+                <span className="faq-q navy">
                   <span style={{ fontWeight: 600 }}>Q</span>
                   <span style={{ fontWeight: 400 }}> {item.q}</span>
-                </p>
-                <span className={open ? "caret caret-open" : "caret caret-closed"} style={{ marginTop: 8, flexShrink: 0 }} />
+                </span>
+                <span className={open ? "caret caret-open" : "caret caret-closed"} aria-hidden="true" />
+              </button>
+              <div className="faq-panel" data-open={open ? "true" : "false"} id={`faq-panel-${i}`}>
+                <div className="faq-panel-inner">
+                  <p className="muted faq-a">{item.a}</p>
+                </div>
               </div>
-              {open && (
-                <p className="muted" style={{ margin: "8px 0 0", width: 603, fontSize: 15, fontWeight: 400, lineHeight: 2.02 }}>
-                  {item.a}
-                </p>
-              )}
-            </button>
-            {i < FAQS.length - 1 && <div className="divider-h" style={{ position: "relative", width: 646, marginTop: open ? 12 : 16, borderTopColor: "#d9d4c4" }} />}
-          </div>
-        );
-      })}
+              {i < FAQS.length - 1 && <div className="divider-h faq-rule" />}
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }
