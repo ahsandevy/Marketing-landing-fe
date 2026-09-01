@@ -10,6 +10,7 @@ import Recommendations from "./components/Recommendations.jsx";
 import MeasurableUpside from "./components/MeasurableUpside.jsx";
 import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
+import DemoPopup from "./components/DemoPopup.jsx";
 import "./landing.css";
 
 const DESIGN = 1440;
@@ -21,6 +22,7 @@ export default function LandingPage() {
     typeof window !== "undefined" ? document.documentElement.clientWidth || window.innerWidth : DESIGN,
   );
   const [bottomH, setBottomH] = useState(666);
+  const [demoOpen, setDemoOpen] = useState(false);
   const bottomRef = useRef(null);
 
   useEffect(() => {
@@ -49,6 +51,10 @@ export default function LandingPage() {
 
   const onNavigate = useCallback(
     (id) => {
+      if (id === "demo") {
+        setDemoOpen(true);
+        return;
+      }
       if (id === "top") {
         window.scrollTo({ top: 0, behavior: "smooth" });
         return;
@@ -108,8 +114,7 @@ export default function LandingPage() {
       >
         <NetworkBackground />
         <Hero />
-        <StopReporting />
-        <HowItWorks />
+        <StopReporting />        <HowItWorks />
         <IntelligenceLayer />
         <ExecutiveBrief />
         <Recommendations />
@@ -119,6 +124,7 @@ export default function LandingPage() {
           <Footer />
         </div>
       </div>
+      <DemoPopup open={demoOpen} onClose={() => setDemoOpen(false)} />
     </div>
   );
 }
