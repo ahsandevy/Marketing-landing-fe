@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="abs pill-gold" style={{ left: 1110, top: 146, width: 232, height: 31, borderRadius: 28.869, fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>
         Guardrail-Protected Scaling
       </div>
-      <img className="abs" src={polygon1} alt="" width={23.739} height={20.558} style={{ left: 1091, top: 166, width: 23.739, height: 20.558, transform: "rotate(-135.13deg)" }} />
+      <img className="abs" src={polygon1} alt="" width={23.739} height={20.558} style={{ left: 1091, top: 172, width: 23.739, height: 20.558, transform: "rotate(-135.13deg)" }} />
 
       <h1 className="abs navy" style={{ left: 185, top: 225, width: 1071, margin: 0, textAlign: "center", fontSize: 50, fontWeight: 700, lineHeight: 0.95 }}>
         Find Every Dollar Your Campaigns Are Leaving Behind.
@@ -18,7 +18,7 @@ export default function Hero() {
       <div className="abs pill-gold" style={{ left: 156, top: 338, width: 221, height: 31, borderRadius: 28.869, fontSize: 14, display: "flex", alignItems: "center", justifyContent: "center" }}>
         Creative Fatigue Detection
       </div>
-      <img className="abs" src={polygon1} alt="" width={23.739} height={20.558} style={{ left: 366.88, top: 319, width: 23.739, height: 20.558, transform: "rotate(44.55deg)" }} />
+      <img className="abs" src={polygon1} alt="" width={23.739} height={20.558} style={{ left: 369.88, top: 321, width: 23.739, height: 20.558, transform: "rotate(44.55deg)" }} />
 
       <p className="abs navy" style={{ left: 166, top: 412, width: 1108, margin: 0, textAlign: "center", fontSize: 16, fontWeight: 500, lineHeight: 1.4 }}>
         AIgent Z helps marketing teams monitor ad performance, catch risks, and scale what&apos;s working with AI-powered insights. Built for faster decisions, real-time monitoring, and confident budget calls. Currently live for Meta Ads, with Google, HubSpot, Shopify, Salesforce, and TikTok coming soon.
