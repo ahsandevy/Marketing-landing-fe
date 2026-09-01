@@ -3,7 +3,7 @@ import { RECS } from "../data/recommendations.js";
 
 export default function Recommendations() {
   return (
-    <section>
+    <section data-reveal>
       <p id="recommendations" className="abs muted" style={{ left: 66, top: 3121, margin: 0, fontSize: 14, fontWeight: 300 }}>AI RECOMMENDATIONS</p>
       <h2 className="abs navy" style={{ left: 346, top: 3176, width: 796, margin: 0, textAlign: "center", fontSize: 48, fontWeight: 500, lineHeight: 0.95 }}>
         Decisions, not <span className="serif">data dumps.</span>
@@ -18,8 +18,8 @@ export default function Recommendations() {
       <button className="abs btn pill-lime" type="button" style={{ left: 1280, top: 3391, width: 99, height: 26, borderRadius: 28.869, fontSize: 14, fontWeight: 500 }}>
         Refresh
       </button>
-      {RECS.map((rec) => (
-        <RecCard key={rec.title} rec={rec} />
+      {RECS.map((rec, i) => (
+        <RecCard key={rec.title} rec={rec} index={i} />
       ))}
     </section>
   );

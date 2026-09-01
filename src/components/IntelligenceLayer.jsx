@@ -33,7 +33,7 @@ const STACK = [
 
 export default function IntelligenceLayer() {
   return (
-    <section>
+    <section data-reveal>
       <img className="abs" src={ellipse3} alt="" width={482.2} height={482.2} style={{ left: 28.9, top: 1895.9, width: 482.2, height: 482.2 }} />
       <img className="abs" src={ellipse10} alt="" width={408.41} height={408.41} style={{ left: 66, top: 1932.62, width: 408.41, height: 408.41 }} />
       <img className="abs" src={ellipse4} alt="" width={373.088} height={373.088} style={{ left: 84, top: 1950, width: 373.088, height: 373.088 }} />
@@ -41,7 +41,7 @@ export default function IntelligenceLayer() {
       {NODES.map(([l, t]) => (
         <img key={`${l}-${t}`} className="abs" src={ellipse6} alt="" width={8.83} height={8.83} style={{ left: l, top: t, width: 8.83, height: 8.83 }} />
       ))}
-      <p className="abs" style={{ left: 167, top: 2062, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "Inria Serif, serif", fontStyle: "italic", fontWeight: 700, fontSize: 34, lineHeight: 1.36 }}>
+      <p className="abs" style={{ left: 167, top: 2062, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "DM Sans, sans-serif", fontStyle: "italic", fontWeight: 500, fontSize: 34, lineHeight: 1.36, letterSpacing: "-0.01em" }}>
         Finding a signal in the noise!
       </p>
 
@@ -68,7 +68,7 @@ export default function IntelligenceLayer() {
             lineHeight: 1.36,
           }}
         >
-          <div style={{ fontSize: 14, fontWeight: 700 }}>NEW OPPORTUNITY</div>
+          <div style={{ fontSize: 14, fontWeight: 500 }}>NEW OPPORTUNITY</div>
           <div style={{ height: 18.01 }} />
           <div style={{ fontSize: 12, fontWeight: 600, color: "#1e4a79" }}>Paid search | high intent</div>
           <div style={{ fontSize: 12, fontWeight: 300 }}>+18% projected conversions lift</div>
@@ -98,7 +98,7 @@ export default function IntelligenceLayer() {
             lineHeight: 1.36,
           }}
         >
-          <div style={{ fontSize: 12, fontWeight: 700 }}>CREATIVE FATIGUE</div>
+          <div style={{ fontSize: 12, fontWeight: 500 }}>CREATIVE FATIGUE</div>
           <div style={{ height: 15.87 }} />
           <div style={{ fontSize: 11, fontWeight: 600, color: "#1e4a79" }}>Meta / Summer campaign</div>
           <div style={{ fontSize: 11, fontWeight: 300 }}>Refresh recommended within 5 days</div>

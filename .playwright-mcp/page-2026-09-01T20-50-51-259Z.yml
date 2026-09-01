@@ -1,0 +1,267 @@
+- generic [ref=e3]:
+  - banner [ref=e621]:
+    - button "Open menu" [ref=e622] [cursor=pointer]
+    - link "AIgent Z home" [ref=e626] [cursor=pointer]:
+      - /url: "#top"
+      - img "AIgent Z" [ref=e627]
+    - link "Recommendation" [ref=e639] [cursor=pointer]:
+      - /url: "#recommendations"
+    - link "How it Works" [ref=e640] [cursor=pointer]:
+      - /url: "#how"
+    - link "Executive Brief" [ref=e641] [cursor=pointer]:
+      - /url: "#brief"
+    - link "Book a Demo" [ref=e642] [cursor=pointer]:
+      - /url: "#demo"
+  - generic [ref=e644]:
+    - generic:
+      - paragraph [ref=e647]: AI-Powered Marketing Intelligence, Across Every Channel.
+      - generic [ref=e648]: Guardrail-Protected Scaling
+      - heading "Find Every Dollar Your Campaigns Are Leaving Behind." [level=1] [ref=e649]
+      - generic [ref=e650]: Creative Fatigue Detection
+      - paragraph [ref=e651]: AIgent Z helps marketing teams monitor ad performance, catch risks, and scale what's working with AI-powered insights. Built for faster decisions, real-time monitoring, and confident budget calls. Currently live for Meta Ads, with Google, HubSpot, Shopify, Salesforce, and TikTok coming soon.
+      - link "Book a Demo" [ref=e653] [cursor=pointer]:
+        - /url: "#demo"
+    - generic:
+      - generic [ref=e654]: ALWAYS ON MARKETING INTELLIGENCE
+      - heading "Stop reporting what happened. See what's next." [level=2] [ref=e658]: Stop reportingwhat happened.See what's next.
+      - paragraph [ref=e659]: AI gent Z turns Meta Ads and every other growth signal into prioritized recommendations your CMO can act on today
+      - link "See Recommendations →" [ref=e660] [cursor=pointer]:
+        - /url: "#recommendations"
+      - link "Explore the Engine →" [ref=e661] [cursor=pointer]:
+        - /url: "#how"
+      - generic [ref=e662]:
+        - paragraph [ref=e664]: LIVE ACCOUNT VIEW
+        - paragraph [ref=e665]: SERVIS SHOUES USD - LAST 30 DAYS
+        - paragraph [ref=e666]: AI EXECUTIVE BRIEF
+        - heading "What should the CMO do next?" [level=3] [ref=e667]: What should theCMO do next?
+        - generic [ref=e668]:
+          - generic [ref=e669]: 92%
+          - generic [ref=e670]: confidence
+        - generic [ref=e671]:
+          - paragraph [ref=e672]: RECOMMENDATION 01
+          - paragraph [ref=e673]: Reallocate budget from Facebook to Instagram
+          - paragraph [ref=e674]: Protect ROAS by moving 50% of spend from a lower-performing placement into the stronger BOFU inventory.
+          - generic [ref=e675]:
+            - generic [ref=e676]: +4,200 USD
+            - generic [ref=e677]: project lift
+        - generic [ref=e678]:
+          - generic [ref=e679]:
+            - generic [ref=e680]: ROAS
+            - generic [ref=e681]: 9.57x
+            - generic [ref=e682]: +8.4% MoM
+          - generic [ref=e683]:
+            - generic [ref=e684]: SPEND
+            - generic [ref=e685]: 154,039 USD
+            - generic [ref=e686]: +139.4% MoM
+          - generic [ref=e687]:
+            - generic [ref=e688]: CPA
+            - generic [ref=e689]: 4 USD
+            - generic [ref=e690]: "-3% MoM"
+        - paragraph [ref=e691]: Verified across 6 connected sources
+        - button "View audit trail" [ref=e692] [cursor=pointer]
+    - generic [ref=e693]:
+      - paragraph [ref=e694]: FROM DATA TO DECISION
+      - heading "The CMO doesn't need another dashboard." [level=2] [ref=e695]
+      - paragraph [ref=e696]: "Every cycle, AI gent Z distills the account into four things that matter: what changed, where there's room to scale, what's putting spend at risk, and the single highest-leverage move to make next. No dashboard to read, no report to translate — just the recommendation, the reasoning, and the numbers behind it."
+      - generic [ref=e697]:
+        - generic [ref=e698]:
+          - generic [ref=e699]: "01"
+          - generic [ref=e700]: Detect
+          - generic [ref=e701]: Find wasted spend, saturation, and shifts others miss.
+        - generic [ref=e702]:
+          - generic [ref=e703]: "02"
+          - generic [ref=e704]: Explain
+          - generic [ref=e705]: Connect the signal to a business implication
+        - generic [ref=e706]:
+          - generic [ref=e707]: "03"
+          - generic [ref=e708]: Quantify
+          - generic [ref=e709]: Model revenue lift, ROAS, CPA, and risk
+        - generic [ref=e710]:
+          - generic [ref=e711]: "04"
+          - generic [ref=e712]: Recommendation
+          - generic [ref=e713]: Give the team a move they can improve or stimulate
+    - generic:
+      - paragraph [ref=e717]: Finding a signal in the noise!
+      - generic [ref=e719]:
+        - generic [ref=e720]: NEW OPPORTUNITY
+        - generic [ref=e722]: Paid search | high intent
+        - generic [ref=e723]: +18% projected conversions lift
+      - generic [ref=e725]:
+        - generic [ref=e726]: CREATIVE FATIGUE
+        - generic [ref=e728]: Meta / Summer campaign
+        - generic [ref=e729]: Refresh recommended within 5 days
+      - generic:
+        - img "Meta"
+      - generic [ref=e736]: Ads
+      - generic:
+        - img "Google"
+      - generic [ref=e737]: Ads
+      - generic:
+        - img "HubSpot"
+      - generic:
+        - img "Shopify"
+      - generic:
+        - img "Salesforce"
+      - generic:
+        - img "TikTok"
+      - generic [ref=e738]: Ads
+      - paragraph [ref=e739]: BUILT FOR THE MODERN MARKETING STACK
+      - heading "One Intelligence layer across every channel" [level=2] [ref=e740]: One Intelligence layeracross every channel
+      - paragraph [ref=e741]: Meta Ads is only the beginning. AI gent Z connects the performance, commerce, and customer signals your team already uses.
+      - paragraph [ref=e743]: Google, HubSpot, Shopify, Salesforce, and TikTok ad integrations are coming soon (only Meta Ads is live).
+    - generic [ref=e744]:
+      - paragraph [ref=e745]: CMO-READY OUTPUT
+      - heading "From weekly reporting, to weekly action." [level=2] [ref=e746]: From weekly reporting,to weekly action.
+      - paragraph [ref=e747]: "Turn the live account into a concise executive brief: what change, what to fix, where to scale, and the risks to manage."
+      - button "Generate a board-ready brief →" [ref=e748] [cursor=pointer]
+      - generic [ref=e749]:
+        - paragraph [ref=e750]: AI EXECUTIVE BRIEF
+        - paragraph [ref=e751]: NEWLY GENERATED | AUG 27, 2026
+        - generic [ref=e753]:
+          - generic [ref=e754]: What Changed?
+          - paragraph [ref=e755]: "+8.2% ROAS: 9.55x this week, led by strong BOFU campaigns"
+        - generic [ref=e756]:
+          - generic [ref=e757]: What to Fix?
+          - paragraph [ref=e758]: Refresh dynamic catalogue creative and tighten frequency caps.
+        - generic [ref=e759]:
+          - generic [ref=e760]: Where to Scale?
+          - paragraph [ref=e761]: 3 high-efficiency campaigns identified for incremental budget.
+        - generic [ref=e762]:
+          - generic [ref=e763]: Risks
+          - paragraph [ref=e764]: Creative fatigue emerging across four Meta ad sets
+        - generic [ref=e766]:
+          - generic [ref=e767]: PRIMARY RECOMMENDATION
+          - generic [ref=e768]: Move budget into peak evening hours, especially 6 PM - 10 PM.
+          - generic [ref=e769]: +500 to +700 incremental purchases
+    - generic:
+      - paragraph [ref=e770]: AI RECOMMENDATIONS
+      - heading "Decisions, not data dumps." [level=2] [ref=e771]
+      - paragraph [ref=e772]: Every card leads with one action to take shift the budget, exclude the audience, refresh the creative — backed by its own confidence score, risk level, and revenue lift in USD, plus an owner and a next check-in date.
+      - button "Last 30 Days" [ref=e773] [cursor=pointer]
+      - button "Refresh" [ref=e775] [cursor=pointer]
+      - article [ref=e776]:
+        - generic [ref=e777]:
+          - generic [ref=e778]: HIGH
+          - generic [ref=e779]: Budget
+          - generic [ref=e780]: 87% Confidence
+          - generic [ref=e781]: Medium Risk
+        - generic [ref=e782]:
+          - generic [ref=e783]: +4,200 USD
+          - generic [ref=e784]: Revenue Lift
+        - paragraph [ref=e785]: Exclude Facebook and prioritize Instagram to improve ROAS
+        - generic [ref=e786]:
+          - generic [ref=e787]: CURATED INSIGHTS
+          - paragraph [ref=e788]: Facebook ROAS is 9.79x vs Instagram at 10.27x. Reallocate 50% toward the stronger placement.
+        - generic [ref=e790]: "Owner: Performance Team"
+        - generic [ref=e791]: "Next check: 7 days"
+        - button "Shift budget →" [ref=e792] [cursor=pointer]
+        - button "Details" [ref=e793] [cursor=pointer]
+      - article [ref=e794]:
+        - generic [ref=e795]:
+          - generic [ref=e796]: HIGH
+          - generic [ref=e797]: Audience
+          - generic [ref=e798]: 80% Confidence
+          - generic [ref=e799]: Low Risk
+        - generic [ref=e800]:
+          - generic [ref=e801]: +260 USD
+          - generic [ref=e802]: Revenue Lift
+        - paragraph [ref=e803]: Exclude NEWMKT - Offline All - April due to high saturation
+        - generic [ref=e804]:
+          - generic [ref=e805]: CURATED INSIGHTS
+          - paragraph [ref=e806]: 85% saturation and 4.5 frequency are driving weak engagement. Protect efficiency by excluding this audience.
+        - generic [ref=e808]: "Owner: Media Planning Team"
+        - generic [ref=e809]: "Next check: 14 days"
+        - button "Exclude audience→" [ref=e810] [cursor=pointer]
+        - button "Details" [ref=e811] [cursor=pointer]
+      - article [ref=e812]:
+        - generic [ref=e813]:
+          - generic [ref=e814]: HIGH
+          - generic [ref=e815]: Creative
+          - generic [ref=e816]: 75% Confidence
+          - generic [ref=e817]: Medium Risk
+        - generic [ref=e818]:
+          - generic [ref=e819]: +420 USD
+          - generic [ref=e820]: Revenue Lift
+        - paragraph [ref=e821]: Refresh the Instagram "COZY" creative to lift CTR
+        - generic [ref=e822]:
+          - generic [ref=e823]: CURATED INSIGHTS
+          - paragraph [ref=e824]: CTR is 1.43%, below the account average of 7.13%. Change the headline and imagery before fatigue compounds.
+        - generic [ref=e826]: "Owner: Creative Team"
+        - generic [ref=e827]: "Next check: 7 days"
+        - button "Refresh creative →" [ref=e828] [cursor=pointer]
+        - button "Details" [ref=e829] [cursor=pointer]
+    - generic [ref=e830]:
+      - heading "Give your next decision a measurable upside." [level=2] [ref=e831]
+      - paragraph [ref=e832]: AI gent Z turns fragmented marketing signals into actionable growth opportunities. It continuously detects where to scale, optimize, fix, and reallocate—giving your team the insight to make smarter decisions and the confidence to act on them.
+      - generic [ref=e833]:
+        - generic [ref=e834]: 24/7
+        - generic [ref=e835]: Always-On Detection
+      - generic [ref=e836]:
+        - generic [ref=e837]: 360°
+        - generic [ref=e838]: Marketing Intelligence
+      - generic [ref=e839]:
+        - generic [ref=e840]: Real-Time
+        - generic [ref=e841]: Growth Signals
+      - generic [ref=e842]:
+        - generic [ref=e843]: AI-Powered
+        - generic [ref=e844]: Next Best Actions
+      - link "Book a Demo" [ref=e846] [cursor=pointer]:
+        - /url: "#demo"
+    - generic [ref=e847]:
+      - generic [ref=e848]:
+        - generic [ref=e849]:
+          - paragraph [ref=e850]: FAQ Section
+          - heading "Frequently Asked Questions" [level=2] [ref=e851]
+          - paragraph [ref=e852]: Find quick answers about AIgent Z, its AI agents, integrations, and how it helps marketing teams make faster, smarter decisions with less manual effort.
+        - generic [ref=e853]:
+          - generic [ref=e854]:
+            - button "Q What is AIgent Z?" [expanded] [ref=e855] [cursor=pointer]:
+              - generic [ref=e856]:
+                - text: Q
+                - generic [ref=e857]: What is AIgent Z?
+            - paragraph [ref=e861]: AIgent Z is an AI-powered marketing intelligence platform that helps teams monitor ad performance, detect opportunities and risks, and get clear, actionable recommendations using intelligent AI agents.
+          - generic [ref=e863]:
+            - button "Q How does AIgent Z's AI agent work?" [ref=e864] [cursor=pointer]:
+              - generic [ref=e865]:
+                - text: Q
+                - generic [ref=e866]: How does AIgent Z's AI agent work?
+            - paragraph [ref=e868]: AIgent Z continuously analyzes your campaign data (spend, revenue, ROAS, CPA, CTR, and more) to detect what changed, flag underperforming creatives or audiences, and recommend what to scale, fix, or pause next. Every recommendation comes with a confidence score and risk level so you know exactly how much to trust it.
+          - generic [ref=e870]:
+            - button "Q Can AIgent Z integrate with our marketing tools?" [ref=e871] [cursor=pointer]:
+              - generic [ref=e872]:
+                - text: Q
+                - generic [ref=e873]: Can AIgent Z integrate with our marketing tools?
+            - paragraph [ref=e875]: AIgent Z currently supports Meta Ads, with Google, HubSpot, Shopify, Salesforce, and TikTok integrations coming soon.
+          - generic [ref=e877]:
+            - button "Q Is human approval available for important actions?" [ref=e878] [cursor=pointer]:
+              - generic [ref=e879]:
+                - text: Q
+                - generic [ref=e880]: Is human approval available for important actions?
+            - paragraph [ref=e882]: Yes. AIgent Z surfaces recommendations for review, and your team decides what to approve, adjust, or ignore. High-impact budget shifts always stay in your control.
+          - generic [ref=e884]:
+            - button "Q Is my advertising and business data secure?" [ref=e885] [cursor=pointer]:
+              - generic [ref=e886]:
+                - text: Q
+                - generic [ref=e887]: Is my advertising and business data secure?
+            - paragraph [ref=e889]: Yes. AIgent Z only accesses the data needed to generate insights, and your campaign data is never shared with third parties.
+          - generic [ref=e891]:
+            - button "Q Do I need a data or analytics background to use AIgent Z?" [ref=e892] [cursor=pointer]:
+              - generic [ref=e893]:
+                - text: Q
+                - generic [ref=e894]: Do I need a data or analytics background to use AIgent Z?
+            - paragraph [ref=e896]: No. AIgent Z is built for marketing teams, not analysts — insights and recommendations are presented in plain language, with the supporting data available if you want to dig deeper.
+      - contentinfo [ref=e897]:
+        - generic [ref=e898]:
+          - img "AIgent Z" [ref=e899]
+          - paragraph [ref=e911]: Know Exactly What to Do Next
+        - navigation [ref=e912]:
+          - generic [ref=e913]: Privacy Policy
+          - generic [ref=e914]: Terms & Conditions
+          - generic [ref=e915]: Disclaimer
+          - generic [ref=e916]: Data Protection
+        - navigation [ref=e917]:
+          - link "FAQs" [ref=e918] [cursor=pointer]:
+            - /url: "#faq"
+          - generic [ref=e919]: Cookie Policy
+          - generic [ref=e920]: Integrations Policy
+          - generic [ref=e921]: Automation Disclaimer

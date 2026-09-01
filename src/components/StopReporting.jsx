@@ -2,7 +2,7 @@ import LiveAccountCard from "./LiveAccountCard.jsx";
 
 export default function StopReporting() {
   return (
-    <section>
+    <section data-reveal>
       <div className="abs" style={{ left: 66, top: 724, width: 354, height: 20 }}>
         <span className="live-dot-outer abs" style={{ left: 0, top: 0 }} />
         <span className="live-dot-inner" />

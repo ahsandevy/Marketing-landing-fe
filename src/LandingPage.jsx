@@ -11,11 +11,22 @@ import MeasurableUpside from "./components/MeasurableUpside.jsx";
 import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import DemoPopup from "./components/DemoPopup.jsx";
+import MobileHeader from "./mobile/MobileHeader.jsx";
+import MobileHero from "./mobile/MobileHero.jsx";
+import MobileStopReporting from "./mobile/MobileStopReporting.jsx";
+import MobileHowItWorks from "./mobile/MobileHowItWorks.jsx";
+import MobileIntelligenceLayer from "./mobile/MobileIntelligenceLayer.jsx";
+import MobileExecutiveBrief from "./mobile/MobileExecutiveBrief.jsx";
+import MobileRecommendations from "./mobile/MobileRecommendations.jsx";
+import MobileMeasurableUpside from "./mobile/MobileMeasurableUpside.jsx";
+import MobileFaq from "./mobile/MobileFaq.jsx";
+import MobileFooter from "./mobile/MobileFooter.jsx";
 import "./landing.css";
 
 const DESIGN = 1440;
 const FAQ_TOP = 4295;
 const NAV = 76;
+const MOBILE_BREAKPOINT = 769;
 
 export default function LandingPage() {
   const [vw, setVw] = useState(() =>
@@ -46,8 +57,9 @@ export default function LandingPage() {
   const boardH = FAQ_TOP + bottomH;
   const navH = NAV;
   const offsetX = (vw - DESIGN * scale) / 2;
+  const isMobile = vw < MOBILE_BREAKPOINT;
 
-  document.documentElement.style.setProperty("--nav-h", `${navH}px`);
+  document.documentElement.style.setProperty("--nav-h", `${isMobile ? 64 : navH}px`);
 
   const onNavigate = useCallback(
     (id) => {
@@ -61,10 +73,10 @@ export default function LandingPage() {
       }
       const el = document.getElementById(id);
       if (!el) return;
-      const top = el.getBoundingClientRect().top + window.scrollY - navH;
+      const top = el.getBoundingClientRect().top + window.scrollY - (isMobile ? 60 : navH);
       window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
     },
-    [navH],
+    [navH, isMobile],
   );
 
   useEffect(() => {
@@ -80,6 +92,48 @@ export default function LandingPage() {
     return () => document.removeEventListener("click", onClick);
   }, [onNavigate]);
 
+  useEffect(() => {
+    const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+    const nodes = Array.from(document.querySelectorAll("[data-reveal]"));
+    document.body.classList.add("reveal-ready");
+    if (reduce || !("IntersectionObserver" in window)) {
+      nodes.forEach((el) => el.classList.add("reveal-in"));
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          entry.target.classList.add("reveal-in");
+          io.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -60px 0px" },
+    );
+    nodes.forEach((el) => io.observe(el));
+    return () => io.disconnect();
+  }, [isMobile]);
+
+  if (isMobile) {
+    return (
+      <div className="mobile" id="top">
+        <MobileHeader onNavigate={onNavigate} />
+        <main>
+          <MobileHero />
+          <MobileStopReporting />
+          <MobileHowItWorks />
+          <MobileIntelligenceLayer />
+          <MobileExecutiveBrief />
+          <MobileRecommendations />
+          <MobileMeasurableUpside />
+          <MobileFaq />
+        </main>
+        <MobileFooter />
+        <DemoPopup open={demoOpen} onClose={() => setDemoOpen(false)} />
+      </div>
+    );
+  }
+
   return (
     <div className="stage" id="top" style={{ height: boardH * scale }}>
       <div
@@ -87,7 +141,7 @@ export default function LandingPage() {
         style={{
           left: offsetX,
           width: DESIGN * scale,
-          height: navH,
+          height: navH * scale,
         }}
       >
         <div

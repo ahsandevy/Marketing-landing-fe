@@ -11,33 +11,33 @@ export default function LiveAccountCard() {
         <span className="serif" style={{ fontWeight: 400, letterSpacing: -1.5 }}>CMO do next?</span>
       </h3>
       <div className="abs" style={{ left: 476, top: 123, width: 208, textAlign: "right" }}>
-        <div style={{ color: "#5d8ebd", fontSize: 28, fontWeight: 700, lineHeight: 1.36 }}>92%</div>
+        <div style={{ color: "#6d7420", fontSize: 28, fontWeight: 500, lineHeight: 1.36 }}>92%</div>
         <div style={{ fontSize: 12, fontWeight: 300 }}>confidence</div>
       </div>
-      <div className="abs" style={{ left: 40, top: 204, width: 644, height: 125, borderRadius: 10, borderLeft: "5px solid #5d8ebd", padding: "17px 41px 0 41px", boxShadow: "4px 4px 9.1px rgba(0,0,0,0.09)", background: "linear-gradient(156.12deg, #f5f8fd 31.67%, #fff 101.75%)" }}>
-        <p style={{ margin: 0, fontSize: 12, fontWeight: 700, color: "#374151" }}>RECOMMENDATION 01</p>
-        <p style={{ margin: "8px 0 0", fontSize: 13, fontWeight: 600, lineHeight: 1.36 }}>Reallocate budget from Facebook to Instagram</p>
+      <div className="abs" style={{ left: 40, top: 204, width: 644, height: 125, borderRadius: 10, borderLeft: "5px solid #6d7420", padding: "17px 41px 0 41px", boxShadow: "4px 4px 9.1px rgba(0,0,0,0.09)", background: "linear-gradient(156.12deg, #f5f8fd 31.67%, #fff 101.75%)" }}>
+        <p style={{ margin: 0, fontSize: 12, fontWeight: 500, color: "#374151" }}>RECOMMENDATION 01</p>
+        <p style={{ margin: "8px 0 0", fontSize: 13, fontWeight: 500, lineHeight: 1.36 }}>Reallocate budget from Facebook to Instagram</p>
         <p style={{ margin: "4px 0 0", width: 474, fontSize: 12, fontWeight: 400, lineHeight: 1.36 }}>Protect ROAS by moving 50% of spend from a lower-performing placement into the stronger BOFU inventory.</p>
         <div className="abs" style={{ right: 24, top: 15, textAlign: "right" }}>
-          <div style={{ color: "#5d8ebd", fontSize: 16, fontWeight: 700 }}>+4,200 USD</div>
+          <div style={{ color: "#6d7420", fontSize: 16, fontWeight: 500 }}>+4,200 USD</div>
           <div style={{ fontSize: 7 }}>project lift</div>
         </div>
       </div>
       <div className="abs" style={{ left: 40, top: 364, width: 644, height: 103, background: "#eceec7", border: "1px solid #c8c8a1", display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
         <div style={{ padding: "18px 30px" }}>
-          <div style={{ fontSize: 12, fontWeight: 600 }}>ROAS</div>
-          <div style={{ fontSize: 22, fontWeight: 600 }}>9.57x</div>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#16a34a" }}>+8.4% MoM</div>
+          <div style={{ fontSize: 12, fontWeight: 500 }}>ROAS</div>
+          <div style={{ fontSize: 22, fontWeight: 500 }}>9.57x</div>
+          <div style={{ fontSize: 12, fontWeight: 500, color: "#16a34a" }}>+8.4% MoM</div>
         </div>
         <div style={{ padding: "18px 30px", borderLeft: "1px solid #c8c8a1" }}>
-          <div style={{ fontSize: 12, fontWeight: 600 }}>SPEND</div>
-          <div style={{ fontSize: 22, fontWeight: 600 }}>154,039 USD</div>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#16a34a" }}>+139.4% MoM</div>
+          <div style={{ fontSize: 12, fontWeight: 500 }}>SPEND</div>
+          <div style={{ fontSize: 22, fontWeight: 500 }}>154,039 USD</div>
+          <div style={{ fontSize: 12, fontWeight: 500, color: "#16a34a" }}>+139.4% MoM</div>
         </div>
         <div style={{ padding: "18px 30px", borderLeft: "1px solid #c8c8a1" }}>
-          <div style={{ fontSize: 12, fontWeight: 600 }}>CPA</div>
-          <div style={{ fontSize: 22, fontWeight: 600 }}>4 USD</div>
-          <div style={{ fontSize: 12, fontWeight: 600, color: "#dc2626" }}>-3% MoM</div>
+          <div style={{ fontSize: 12, fontWeight: 500 }}>CPA</div>
+          <div style={{ fontSize: 22, fontWeight: 500 }}>4 USD</div>
+          <div style={{ fontSize: 12, fontWeight: 500, color: "#dc2626" }}>-3% MoM</div>
         </div>
       </div>
       <p className="abs muted" style={{ left: 40, top: 477, margin: 0, fontSize: 12, fontWeight: 300 }}>Verified across 6 connected sources</p>

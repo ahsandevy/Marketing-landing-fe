@@ -2,7 +2,7 @@ import BrandMark from "./BrandMark.jsx";
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer data-reveal className="site-footer">
       <div className="abs" style={{ left: 66, top: 42 }}>
         <BrandMark color="white" width={354} />
         <p style={{ margin: "20px 0 0", color: "#fff", fontSize: 15, textAlign: "right", width: 354 }}>

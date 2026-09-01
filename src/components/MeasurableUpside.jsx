@@ -1,14 +1,15 @@
 const STATS = [
-  { value: "24/7", label: "Always-On Detection", left: 194, top: 258, width: 200, valueWeight: 600 },
-  { value: "360°", label: "Marketing Intelligence", left: 467, top: 262, width: 203, valueWeight: 700 },
-  { value: "Real-Time", label: "Growth Signals", left: 743, top: 264, width: 224, valueWeight: 700 },
-  { value: "AI-Powered", label: "Next Best Actions", left: 1040, top: 260, width: 246, valueWeight: 700 },
+  { value: "24/7", label: "Always-On Detection", left: 194, top: 258, width: 200, valueWeight: 500 },
+  { value: "360°", label: "Marketing Intelligence", left: 467, top: 262, width: 203, valueWeight: 500 },
+  { value: "Real-Time", label: "Growth Signals", left: 743, top: 264, width: 224, valueWeight: 500 },
+  { value: "AI-Powered", label: "Next Best Actions", left: 1040, top: 260, width: 246, valueWeight: 500 },
 ];
 
 export default function MeasurableUpside() {
   return (
     <section
-      className="abs"
+      data-reveal
+      className="abs measurable"
       style={{
         left: 0,
         top: 3755,
@@ -34,7 +35,7 @@ export default function MeasurableUpside() {
         }}
       >
         Give your next decision{" "}
-        <span className="serif" style={{ color: "#72721f" }}>
+        <span className="serif" style={{ color: "#6d7420" }}>
           a measurable upside.
         </span>
       </h2>
@@ -92,7 +93,7 @@ export default function MeasurableUpside() {
           height: 42,
           borderRadius: 39.456,
           fontSize: 19,
-          fontWeight: 800,
+          fontWeight: 500,
           color: "#fafafa",
           boxShadow: "2.077px 2.077px 6.126px rgba(0,0,0,0.1)",
         }}
