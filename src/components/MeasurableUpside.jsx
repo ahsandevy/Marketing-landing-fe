@@ -28,7 +28,7 @@ export default function MeasurableUpside() {
           width: 1106,
           margin: 0,
           textAlign: "center",
-          fontSize: 46,
+          fontSize: 42,
           fontWeight: 500,
           lineHeight: 0.95,
         }}

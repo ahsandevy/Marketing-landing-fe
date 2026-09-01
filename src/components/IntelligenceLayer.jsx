@@ -127,7 +127,7 @@ export default function IntelligenceLayer() {
       <span className="abs muted" style={{ left: 656.48, top: 2292, fontSize: 13 }}>Ads</span>
 
       <p className="abs muted" style={{ left: 1070, top: 1980, width: 307, margin: 0, textAlign: "right", fontSize: 14, fontWeight: 300 }}>BUILT FOR THE MODERN MARKETING STACK</p>
-      <h2 className="abs navy" style={{ left: 772, top: 2032, width: 605, margin: 0, textAlign: "right", fontSize: 52, fontWeight: 500, lineHeight: 0.95 }}>
+      <h2 className="abs navy" style={{ left: 772, top: 2032, width: 605, margin: 0, textAlign: "right", fontSize: 48, fontWeight: 500, lineHeight: 0.95 }}>
         One Intelligence layer
         <br />
         <span className="serif">across every channel</span>

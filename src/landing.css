@@ -7,7 +7,6 @@
 .artboard {
   position: relative;
   width: 1440px;
-  min-height: 4295px;
   transform-origin: top left;
   overflow: hidden;
   background: linear-gradient(180deg, #fbfdff 0%, #ffffff 100%);

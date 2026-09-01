@@ -17,15 +17,17 @@ const FAQ_TOP = 4295;
 const NAV = 76;
 
 export default function LandingPage() {
-  const [vw, setVw] = useState(typeof window !== "undefined" ? window.innerWidth : DESIGN);
+  const [vw, setVw] = useState(() =>
+    typeof window !== "undefined" ? document.documentElement.clientWidth || window.innerWidth : DESIGN,
+  );
   const [bottomH, setBottomH] = useState(666);
   const bottomRef = useRef(null);
 
   useEffect(() => {
-    const fit = () => setVw(window.innerWidth);
-    fit();
-    window.addEventListener("resize", fit);
-    return () => window.removeEventListener("resize", fit);
+    const onResize = () => setVw(document.documentElement.clientWidth || window.innerWidth);
+    onResize();
+    window.addEventListener("resize", onResize);
+    return () => window.removeEventListener("resize", onResize);
   }, []);
 
   useEffect(() => {
@@ -38,11 +40,10 @@ export default function LandingPage() {
     return () => ro.disconnect();
   }, []);
 
-  const scale = Math.min(vw / DESIGN, 1);
-  const boardW = Math.min(vw, DESIGN);
+  const scale = vw / DESIGN;
   const boardH = FAQ_TOP + bottomH;
-  const offsetX = Math.max(0, (vw - boardW) / 2);
   const navH = NAV;
+  const offsetX = (vw - DESIGN * scale) / 2;
 
   document.documentElement.style.setProperty("--nav-h", `${navH}px`);
 
@@ -74,12 +75,12 @@ export default function LandingPage() {
   }, [onNavigate]);
 
   return (
-    <div className="stage" id="top" style={{ height: boardH }}>
+    <div className="stage" id="top" style={{ height: boardH * scale }}>
       <div
         className="site-nav-shell"
         style={{
           left: offsetX,
-          width: boardW,
+          width: DESIGN * scale,
           height: navH,
         }}
       >
@@ -99,7 +100,6 @@ export default function LandingPage() {
       <div
         className="artboard"
         style={{
-          width: DESIGN,
           height: boardH,
           transformOrigin: "top left",
           transform: `scale(${scale})`,

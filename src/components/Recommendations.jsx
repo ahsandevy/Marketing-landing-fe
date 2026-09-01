@@ -5,7 +5,7 @@ export default function Recommendations() {
   return (
     <section>
       <p id="recommendations" className="abs muted" style={{ left: 66, top: 3121, margin: 0, fontSize: 14, fontWeight: 300 }}>AI RECOMMENDATIONS</p>
-      <h2 className="abs navy" style={{ left: 346, top: 3176, width: 796, margin: 0, textAlign: "center", fontSize: 52, fontWeight: 500, lineHeight: 0.95 }}>
+      <h2 className="abs navy" style={{ left: 346, top: 3176, width: 796, margin: 0, textAlign: "center", fontSize: 48, fontWeight: 500, lineHeight: 0.95 }}>
         Decisions, not <span className="serif">data dumps.</span>
       </h2>
       <p className="abs muted" style={{ left: 78, top: 3269, width: 1303, margin: 0, fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>

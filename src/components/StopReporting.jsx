@@ -9,10 +9,10 @@ export default function StopReporting() {
         <span className="abs muted" style={{ left: 22, top: 0, fontSize: 14, fontWeight: 300, lineHeight: 1.36 }}>ALWAYS ON MARKETING INTELLIGENCE</span>
       </div>
 
-      <h2 className="abs navy" style={{ left: 75, top: 772, width: 525, margin: 0, fontSize: 56, fontWeight: 700, lineHeight: 0.95 }}>
+      <h2 className="abs navy" style={{ left: 75, top: 772, width: 525, margin: 0, fontSize: 50, fontWeight: 700, lineHeight: 0.95 }}>
         Stop reporting
         <br />
-        <span className="serif" style={{ fontSize: 60, letterSpacing: -1.8 }}>what happened.</span>
+        <span className="serif" style={{ fontSize: 54, letterSpacing: -1.8 }}>what happened.</span>
         <br />
         See what&apos;s next.
       </h2>

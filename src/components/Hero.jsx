@@ -11,7 +11,7 @@ export default function Hero() {
       </div>
       <img className="abs" src={polygon1} alt="" width={23.739} height={20.558} style={{ left: 1091, top: 166, width: 23.739, height: 20.558, transform: "rotate(-135.13deg)" }} />
 
-      <h1 className="abs navy" style={{ left: 185, top: 225, width: 1071, margin: 0, textAlign: "center", fontSize: 56, fontWeight: 700, lineHeight: 0.95 }}>
+      <h1 className="abs navy" style={{ left: 185, top: 225, width: 1071, margin: 0, textAlign: "center", fontSize: 50, fontWeight: 700, lineHeight: 0.95 }}>
         Find Every Dollar Your Campaigns Are Leaving Behind.
       </h1>
 

@@ -9,7 +9,7 @@ export default function HowItWorks() {
   return (
     <section id="how" className="abs card-shadow" style={{ left: 26, top: 1239, width: 1389, height: 556, borderRadius: 10, boxShadow: "4px 4px 16.7px rgba(0,0,0,0.15)" }}>
       <p className="abs muted" style={{ left: 40, top: 60, margin: 0, fontSize: 14, fontWeight: 300 }}>FROM DATA TO DECISION</p>
-      <h2 className="abs navy" style={{ left: 94, top: 114, width: 1201, margin: 0, fontSize: 52, fontWeight: 500, lineHeight: 0.95, textAlign: "center" }}>
+      <h2 className="abs navy" style={{ left: 94, top: 114, width: 1201, margin: 0, fontSize: 48, fontWeight: 500, lineHeight: 0.95, textAlign: "center" }}>
         The CMO doesn&apos;t need <span className="serif">another dashboard.</span>
       </h2>
       <p className="abs muted" style={{ left: 40, top: 202, width: 1315, margin: 0, fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>
