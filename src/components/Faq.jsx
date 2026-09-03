@@ -7,11 +7,11 @@ export default function Faq() {
   return (
     <section id="faq" data-reveal className="faq-section">
       <div className="faq-intro">
-        <p className="muted" style={{ margin: 0, fontSize: 14, fontWeight: 300 }}>FAQ Section</p>
-        <h2 className="navy" style={{ margin: "20px 0 0", fontSize: 42, fontWeight: 700, lineHeight: 0.95 }}>
+        <p className="muted" style={{ margin: 0, fontSize: 12, fontWeight: 400, letterSpacing: "0.16em" }}>FAQ Section</p>
+        <h2 className="navy" style={{ margin: "16px 0 0", fontSize: 36, fontWeight: 500, lineHeight: 1.15 }}>
           Frequently Asked Questions
         </h2>
-        <p className="muted" style={{ margin: "28px 0 0", width: 561, fontSize: 16, fontWeight: 400, lineHeight: 1.6, letterSpacing: "0.01em" }}>
+        <p className="muted" style={{ margin: "20px 0 0", maxWidth: 480, fontSize: 16, fontWeight: 400, lineHeight: 1.55, letterSpacing: "0.01em" }}>
           Find quick answers about AIgent Z, its AI agents, integrations, and how it helps marketing teams make faster, smarter decisions with less manual effort.
         </p>
       </div>

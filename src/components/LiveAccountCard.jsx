@@ -5,13 +5,13 @@ export default function LiveAccountCard() {
       <p className="abs muted" style={{ left: 54, top: 22, margin: 0, fontSize: 12, fontWeight: 300 }}>LIVE ACCOUNT VIEW</p>
       <p className="abs muted" style={{ left: 476, top: 22, margin: 0, fontSize: 12, fontWeight: 300, textAlign: "right", width: 208 }}>SERVIS SHOUES USD - LAST 30 DAYS</p>
       <p className="abs muted" style={{ left: 40, top: 68, margin: 0, fontSize: 12, fontWeight: 300 }}>AI EXECUTIVE BRIEF</p>
-      <h3 className="abs navy" style={{ left: 40, top: 89, width: 398, margin: 0, fontSize: 46, fontWeight: 400, lineHeight: 0.95 }}>
+      <h3 className="abs navy" style={{ left: 40, top: 92, width: 398, margin: 0, fontSize: 32, fontWeight: 500, lineHeight: 1.12 }}>
         What should the
         <br />
-        <span className="serif" style={{ fontWeight: 400, letterSpacing: -1.5 }}>CMO do next?</span>
+        <span className="serif" style={{ fontWeight: 500, letterSpacing: -0.5 }}>CMO do next?</span>
       </h3>
-      <div className="abs" style={{ left: 476, top: 123, width: 208, textAlign: "right" }}>
-        <div style={{ color: "#6d7420", fontSize: 28, fontWeight: 500, lineHeight: 1.36 }}>92%</div>
+      <div className="abs" style={{ left: 476, top: 118, width: 208, textAlign: "right" }}>
+        <div style={{ color: "#6d7420", fontSize: 28, fontWeight: 500, lineHeight: 1.2 }}>92%</div>
         <div style={{ fontSize: 12, fontWeight: 300 }}>confidence</div>
       </div>
       <div className="abs" style={{ left: 40, top: 204, width: 644, height: 125, borderRadius: 10, borderLeft: "5px solid #6d7420", padding: "17px 41px 0 41px", boxShadow: "4px 4px 9.1px rgba(0,0,0,0.09)", background: "linear-gradient(156.12deg, #f5f8fd 31.67%, #fff 101.75%)" }}>

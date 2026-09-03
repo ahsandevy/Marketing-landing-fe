@@ -1,23 +1,17 @@
-import polygon1 from "../assets/polygon1.svg";
-
 export default function MobileHero() {
   return (
     <section className="mobile-section mobile-hero">
       <p className="mobile-hero-sub">
-        AI-Powered Marketing Intelligence, Across Every Channel.
+        AI-Powered Marketing Intelligence,{" "}
+        <span className="serif">Across Every Channel.</span>
       </p>
 
       <div className="mobile-hero-head">
+        <span className="hero-badge hero-badge-guard">Guardrail-Protected Scaling</span>
         <h1 className="mobile-hero-title">
           Find Every Dollar Your Campaigns Are Leaving Behind.
         </h1>
-        <span className="pill-gold hero-badge hero-badge-guard">
-          Guardrail-Protected Scaling
-        </span>
-        <span className="pill-gold hero-badge hero-badge-creative">
-          Creative Fatigue Detection
-          <img src={polygon1} alt="" className="mobile-hero-arrow" />
-        </span>
+        <span className="hero-badge hero-badge-creative">Creative Fatigue Detection</span>
       </div>
 
       <p className="mobile-hero-body">

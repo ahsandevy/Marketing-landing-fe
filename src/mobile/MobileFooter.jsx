@@ -4,7 +4,7 @@ export default function MobileFooter() {
   return (
     <footer data-reveal className="mobile-footer">
       <div className="mobile-footer-brand">
-        <BrandMark color="white" width={200} />
+        <BrandMark color="white" width={168} />
         <p className="mobile-footer-tagline">
           Know <span style={{ fontWeight: 500 }}>Exactly</span> What to Do{" "}
           <span style={{ fontWeight: 500 }}>Next</span>

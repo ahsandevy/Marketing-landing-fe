@@ -1,8 +1,8 @@
 const STATS = [
-  { value: "24/7", label: "Always-On Detection", left: 194, top: 258, width: 200, valueWeight: 500 },
-  { value: "360°", label: "Marketing Intelligence", left: 467, top: 262, width: 203, valueWeight: 500 },
-  { value: "Real-Time", label: "Growth Signals", left: 743, top: 264, width: 224, valueWeight: 500 },
-  { value: "AI-Powered", label: "Next Best Actions", left: 1040, top: 260, width: 246, valueWeight: 500 },
+  { value: "24/7", label: "Always-On Detection", left: 80 },
+  { value: "360°", label: "Marketing Intelligence", left: 400 },
+  { value: "Real-Time", label: "Growth Signals", left: 720 },
+  { value: "AI-Powered", label: "Next Best Actions", left: 1040 },
 ];
 
 export default function MeasurableUpside() {
@@ -24,14 +24,14 @@ export default function MeasurableUpside() {
       <h2
         className="abs navy"
         style={{
-          left: 167,
-          top: 56,
-          width: 1106,
+          left: 160,
+          top: 64,
+          width: 1120,
           margin: 0,
           textAlign: "center",
-          fontSize: 42,
+          fontSize: 36,
           fontWeight: 500,
-          lineHeight: 0.95,
+          lineHeight: 1.15,
         }}
       >
         Give your next decision{" "}
@@ -42,14 +42,14 @@ export default function MeasurableUpside() {
       <p
         className="abs muted"
         style={{
-          left: 167,
-          top: 139,
-          width: 1106,
+          left: 220,
+          top: 132,
+          width: 1000,
           margin: 0,
           textAlign: "center",
-          fontSize: 17,
-          fontWeight: 300,
-          lineHeight: 1.4,
+          fontSize: 16,
+          fontWeight: 400,
+          lineHeight: 1.55,
         }}
       >
         AI gent Z turns fragmented marketing signals into actionable growth opportunities. It continuously detects where to scale, optimize, fix, and reallocate—giving your team the insight to make smarter decisions and the confidence to act on them.
@@ -61,23 +61,23 @@ export default function MeasurableUpside() {
           className="abs navy"
           style={{
             left: stat.left,
-            top: stat.top,
-            width: stat.width,
+            top: 248,
+            width: 320,
             textAlign: "center",
           }}
         >
-          <div style={{ fontSize: 36, fontWeight: stat.valueWeight, lineHeight: 1.36 }}>{stat.value}</div>
-          <div style={{ fontSize: 17, fontWeight: 300, lineHeight: 1.36 }}>{stat.label}</div>
+          <div style={{ fontSize: 28, fontWeight: 500, lineHeight: 1.2 }}>{stat.value}</div>
+          <div style={{ fontSize: 14, fontWeight: 400, lineHeight: 1.4, marginTop: 6 }}>{stat.label}</div>
         </div>
       ))}
 
       <div
         className="abs"
         style={{
-          left: 615,
-          top: 385,
-          width: 209,
-          height: 42,
+          left: 620,
+          top: 390,
+          width: 200,
+          height: 44,
           borderRadius: 39.456,
           background: "#1e4a79",
           filter: "blur(10px)",
@@ -87,12 +87,12 @@ export default function MeasurableUpside() {
         className="abs btn pill-navy"
         href="#demo"
         style={{
-          left: 615.15,
-          top: 385,
-          width: 209,
-          height: 42,
-          borderRadius: 39.456,
-          fontSize: 19,
+          left: 620,
+          top: 390,
+          width: 200,
+          height: 44,
+          borderRadius: 999,
+          fontSize: 15,
           fontWeight: 500,
           color: "#fafafa",
           boxShadow: "2.077px 2.077px 6.126px rgba(0,0,0,0.1)",

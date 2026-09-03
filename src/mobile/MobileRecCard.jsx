@@ -21,17 +21,19 @@ export default function MobileRecCard({ rec, index = 0 }) {
 
       <div className="mobile-rec-divider" />
 
-      <div className="mobile-rec-meta">
-        <span>{rec.owner}</span>
-        <span>{rec.check}</span>
-      </div>
-      <div className="mobile-rec-actions">
-        <button className="btn pill-lime mobile-rec-action" type="button">
-          {rec.action}
-        </button>
-        <button className="btn mobile-rec-details" type="button">
-          Details
-        </button>
+      <div className="mobile-rec-foot">
+        <div className="mobile-rec-meta">
+          <span>{rec.owner}</span>
+          <span>{rec.check}</span>
+        </div>
+        <div className="mobile-rec-actions">
+          <button className="btn pill-lime mobile-rec-action" type="button">
+            {rec.action}
+          </button>
+          <button className="btn mobile-rec-details" type="button">
+            Details
+          </button>
+        </div>
       </div>
     </article>
   );

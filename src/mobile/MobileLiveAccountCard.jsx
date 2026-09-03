@@ -11,9 +11,7 @@ export default function MobileLiveAccountCard() {
         <div>
           <p className="muted mobile-live-label">AI EXECUTIVE BRIEF</p>
           <h3 className="navy mobile-live-title">
-            What should the
-            <br />
-            <span className="serif">CMO do next?</span>
+            What should the <span className="serif">CMO</span> do next?
           </h3>
         </div>
         <div className="mobile-live-confidence">
@@ -23,16 +21,18 @@ export default function MobileLiveAccountCard() {
       </div>
 
       <div className="mobile-live-rec">
-        <p className="mobile-live-rec-label">RECOMMENDATION 01</p>
+        <div className="mobile-live-rec-top">
+          <p className="mobile-live-rec-label">RECOMMENDATION 01</p>
+          <div className="mobile-live-rec-metric">
+            <span>+4,200 USD</span>
+            <span className="muted"> project lift</span>
+          </div>
+        </div>
         <p className="mobile-live-rec-title">Reallocate budget from Facebook to Instagram</p>
         <p className="mobile-live-rec-desc">
           Protect ROAS by moving 50% of spend from a lower-performing placement
           into the stronger BOFU inventory.
         </p>
-        <div className="mobile-live-rec-metric">
-          <span>+4,200 USD</span>
-          <span className="muted"> project lift</span>
-        </div>
       </div>
 
       <div className="mobile-live-metrics">

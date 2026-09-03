@@ -41,7 +41,7 @@ export default function IntelligenceLayer() {
       {NODES.map(([l, t]) => (
         <img key={`${l}-${t}`} className="abs" src={ellipse6} alt="" width={8.83} height={8.83} style={{ left: l, top: t, width: 8.83, height: 8.83 }} />
       ))}
-      <p className="abs" style={{ left: 167, top: 2062, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "DM Sans, sans-serif", fontStyle: "italic", fontWeight: 500, fontSize: 34, lineHeight: 1.36, letterSpacing: "-0.01em" }}>
+      <p className="abs" style={{ left: 167, top: 2072, width: 207.516, margin: 0, textAlign: "center", color: "#fff", fontFamily: "DM Sans, sans-serif", fontStyle: "italic", fontWeight: 500, fontSize: 24, lineHeight: 1.25, letterSpacing: "-0.01em" }}>
         Finding a signal in the noise!
       </p>
 
@@ -126,17 +126,17 @@ export default function IntelligenceLayer() {
       <Crop src={tiktok} box={{ left: 557, top: 2287, width: 70, height: 23 }} imgStyle={{ height: "170.59%", left: "-0.4%", top: "-35.29%", width: "100.8%" }} alt="TikTok" />
       <span className="abs muted" style={{ left: 656.48, top: 2292, fontSize: 13 }}>Ads</span>
 
-      <p className="abs muted" style={{ left: 1070, top: 1980, width: 307, margin: 0, textAlign: "right", fontSize: 14, fontWeight: 300 }}>BUILT FOR THE MODERN MARKETING STACK</p>
-      <h2 className="abs navy" style={{ left: 772, top: 2032, width: 605, margin: 0, textAlign: "right", fontSize: 48, fontWeight: 500, lineHeight: 0.95 }}>
+      <p className="abs muted" style={{ left: 900, top: 1992, width: 477, margin: 0, textAlign: "right", fontSize: 12, fontWeight: 400, letterSpacing: "0.16em" }}>BUILT FOR THE MODERN MARKETING STACK</p>
+      <h2 className="abs navy" style={{ left: 772, top: 2036, width: 605, margin: 0, textAlign: "right", fontSize: 36, fontWeight: 500, lineHeight: 1.15 }}>
         One Intelligence layer
         <br />
         <span className="serif">across every channel</span>
       </h2>
-      <p className="abs muted" style={{ left: 900, top: 2166, width: 477, margin: 0, textAlign: "right", fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>
-        Meta Ads is only the beginning. AI gent Z connects the performance, commerce, and customer signals your team already uses.
+      <p className="abs muted" style={{ left: 900, top: 2148, width: 477, margin: 0, textAlign: "right", fontSize: 16, fontWeight: 400, lineHeight: 1.55 }}>
+        Meta Ads is only the beginning. AIgent Z connects the performance, commerce, and customer signals your team already uses.
       </p>
-      <div className="abs" style={{ left: 630, top: 2392, width: 749, height: 28, borderRadius: 15, background: "#ebf1f8", display: "flex", alignItems: "center", paddingLeft: 11 }}>
-        <p style={{ margin: 0, fontSize: 14, fontStyle: "italic", fontWeight: 400 }}>Google, HubSpot, Shopify, Salesforce, and TikTok ad integrations are coming soon (only Meta Ads is live).</p>
+      <div className="abs" style={{ left: 630, top: 2392, width: 749, height: 32, borderRadius: 8, background: "#ebf1f8", display: "flex", alignItems: "center", paddingLeft: 14 }}>
+        <p style={{ margin: 0, fontSize: 13, fontStyle: "italic", fontWeight: 400 }}>Google, HubSpot, Shopify, Salesforce, and TikTok ad integrations are coming soon (only Meta Ads is live).</p>
       </div>
     </section>
   );

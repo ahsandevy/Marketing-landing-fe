@@ -1,15 +1,4 @@
-import { useCallback, useEffect, useRef, useState } from "react";
-import NetworkBackground from "./components/NetworkBackground.jsx";
-import Header from "./components/Header.jsx";
-import Hero from "./components/Hero.jsx";
-import StopReporting from "./components/StopReporting.jsx";
-import HowItWorks from "./components/HowItWorks.jsx";
-import IntelligenceLayer from "./components/IntelligenceLayer.jsx";
-import ExecutiveBrief from "./components/ExecutiveBrief.jsx";
-import Recommendations from "./components/Recommendations.jsx";
-import MeasurableUpside from "./components/MeasurableUpside.jsx";
-import Faq from "./components/Faq.jsx";
-import Footer from "./components/Footer.jsx";
+import { useCallback, useEffect, useState } from "react";
 import DemoPopup from "./components/DemoPopup.jsx";
 import MobileHeader from "./mobile/MobileHeader.jsx";
 import MobileHero from "./mobile/MobileHero.jsx";
@@ -23,61 +12,29 @@ import MobileFaq from "./mobile/MobileFaq.jsx";
 import MobileFooter from "./mobile/MobileFooter.jsx";
 import "./landing.css";
 
-const DESIGN = 1440;
-const FAQ_TOP = 4295;
-const NAV = 76;
-const MOBILE_BREAKPOINT = 769;
-
 export default function LandingPage() {
-  const [vw, setVw] = useState(() =>
-    typeof window !== "undefined" ? document.documentElement.clientWidth || window.innerWidth : DESIGN,
-  );
-  const [bottomH, setBottomH] = useState(666);
   const [demoOpen, setDemoOpen] = useState(false);
-  const bottomRef = useRef(null);
 
-  useEffect(() => {
-    const onResize = () => setVw(document.documentElement.clientWidth || window.innerWidth);
-    onResize();
-    window.addEventListener("resize", onResize);
-    return () => window.removeEventListener("resize", onResize);
-  }, []);
-
-  useEffect(() => {
-    const el = bottomRef.current;
+  const onNavigate = useCallback((id) => {
+    if (id === "demo") {
+      setDemoOpen(true);
+      return;
+    }
+    if (id === "top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
     if (!el) return;
-    const measure = () => setBottomH(el.offsetHeight);
-    measure();
-    const ro = new ResizeObserver(measure);
-    ro.observe(el);
-    return () => ro.disconnect();
+    const nav = document.querySelector(".mobile-header");
+    const offset = nav ? nav.getBoundingClientRect().height : 56;
+    const top = el.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
   }, []);
 
-  const scale = vw / DESIGN;
-  const boardH = FAQ_TOP + bottomH;
-  const navH = NAV;
-  const offsetX = (vw - DESIGN * scale) / 2;
-  const isMobile = vw < MOBILE_BREAKPOINT;
-
-  document.documentElement.style.setProperty("--nav-h", `${isMobile ? 64 : navH}px`);
-
-  const onNavigate = useCallback(
-    (id) => {
-      if (id === "demo") {
-        setDemoOpen(true);
-        return;
-      }
-      if (id === "top") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        return;
-      }
-      const el = document.getElementById(id);
-      if (!el) return;
-      const top = el.getBoundingClientRect().top + window.scrollY - (isMobile ? 60 : navH);
-      window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
-    },
-    [navH, isMobile],
-  );
+  useEffect(() => {
+    document.documentElement.style.setProperty("--nav-h", "64px");
+  }, []);
 
   useEffect(() => {
     const onClick = (event) => {
@@ -112,72 +69,22 @@ export default function LandingPage() {
     );
     nodes.forEach((el) => io.observe(el));
     return () => io.disconnect();
-  }, [isMobile]);
-
-  if (isMobile) {
-    return (
-      <div className="mobile" id="top">
-        <MobileHeader onNavigate={onNavigate} />
-        <main>
-          <MobileHero />
-          <MobileStopReporting />
-          <MobileHowItWorks />
-          <MobileIntelligenceLayer />
-          <MobileExecutiveBrief />
-          <MobileRecommendations />
-          <MobileMeasurableUpside />
-          <MobileFaq />
-        </main>
-        <MobileFooter />
-        <DemoPopup open={demoOpen} onClose={() => setDemoOpen(false)} />
-      </div>
-    );
-  }
+  }, []);
 
   return (
-    <div className="stage" id="top" style={{ height: boardH * scale }}>
-      <div
-        className="site-nav-shell"
-        style={{
-          left: offsetX,
-          width: DESIGN * scale,
-          height: navH * scale,
-        }}
-      >
-        <div
-          className="site-nav-inner"
-          style={{
-            width: DESIGN,
-            height: NAV,
-            transformOrigin: "top left",
-            transform: `scale(${scale})`,
-          }}
-        >
-          <Header onNavigate={onNavigate} />
-        </div>
-      </div>
-
-      <div
-        className="artboard"
-        style={{
-          height: boardH,
-          transformOrigin: "top left",
-          transform: `scale(${scale})`,
-          marginLeft: offsetX,
-        }}
-      >
-        <NetworkBackground />
-        <Hero />
-        <StopReporting />        <HowItWorks />
-        <IntelligenceLayer />
-        <ExecutiveBrief />
-        <Recommendations />
-        <MeasurableUpside />
-        <div ref={bottomRef} className="abs page-bottom" style={{ left: 0, top: FAQ_TOP, width: DESIGN }}>
-          <Faq />
-          <Footer />
-        </div>
-      </div>
+    <div className="mobile" id="top">
+      <MobileHeader onNavigate={onNavigate} />
+      <main>
+        <MobileHero />
+        <MobileStopReporting />
+        <MobileHowItWorks />
+        <MobileIntelligenceLayer />
+        <MobileExecutiveBrief />
+        <MobileRecommendations />
+        <MobileMeasurableUpside />
+        <MobileFaq />
+      </main>
+      <MobileFooter />
       <DemoPopup open={demoOpen} onClose={() => setDemoOpen(false)} />
     </div>
   );

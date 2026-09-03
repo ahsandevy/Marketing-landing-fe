@@ -4,18 +4,18 @@ import { RECS } from "../data/recommendations.js";
 export default function Recommendations() {
   return (
     <section data-reveal>
-      <p id="recommendations" className="abs muted" style={{ left: 66, top: 3121, margin: 0, fontSize: 14, fontWeight: 300 }}>AI RECOMMENDATIONS</p>
-      <h2 className="abs navy" style={{ left: 346, top: 3176, width: 796, margin: 0, textAlign: "center", fontSize: 48, fontWeight: 500, lineHeight: 0.95 }}>
+      <p id="recommendations" className="abs muted" style={{ left: 66, top: 3128, margin: 0, fontSize: 12, fontWeight: 400, letterSpacing: "0.16em" }}>AI RECOMMENDATIONS</p>
+      <h2 className="abs navy" style={{ left: 220, top: 3172, width: 1000, margin: 0, textAlign: "center", fontSize: 36, fontWeight: 500, lineHeight: 1.15 }}>
         Decisions, not <span className="serif">data dumps.</span>
       </h2>
-      <p className="abs muted" style={{ left: 78, top: 3269, width: 1303, margin: 0, fontSize: 17, fontWeight: 300, lineHeight: 1.4 }}>
-        Every card leads with one action to take shift the budget, exclude the audience, refresh the creative — backed by its own confidence score, risk level, and revenue lift in USD, plus an owner and a next check-in date.
+      <p className="abs muted" style={{ left: 160, top: 3236, width: 1120, margin: 0, fontSize: 16, fontWeight: 400, lineHeight: 1.55, textAlign: "center" }}>
+        Every card leads with one action to take — shift the budget, exclude the audience, refresh the creative — backed by its own confidence score, risk level, and revenue lift in USD, plus an owner and a next check-in date.
       </p>
-      <button className="abs btn pill-lime" type="button" style={{ left: 1109, top: 3391, width: 152.7, height: 25.83, borderRadius: 28.869, fontSize: 14, fontWeight: 500, gap: 8 }}>
+      <button className="abs btn pill-lime" type="button" style={{ left: 1096, top: 3388, width: 148, height: 32, borderRadius: 999, fontSize: 13, fontWeight: 500, gap: 8 }}>
         Last 30 Days
-        <span style={{ display: "inline-block", width: 0, height: 0, borderLeft: "6px solid transparent", borderRight: "6px solid transparent", borderTop: "6px solid #374151" }} />
+        <span style={{ display: "inline-block", width: 0, height: 0, borderLeft: "5px solid transparent", borderRight: "5px solid transparent", borderTop: "5px solid #374151" }} />
       </button>
-      <button className="abs btn pill-lime" type="button" style={{ left: 1280, top: 3391, width: 99, height: 26, borderRadius: 28.869, fontSize: 14, fontWeight: 500 }}>
+      <button className="abs btn pill-lime" type="button" style={{ left: 1256, top: 3388, width: 118, height: 32, borderRadius: 999, fontSize: 13, fontWeight: 500 }}>
         Refresh
       </button>
       {RECS.map((rec, i) => (

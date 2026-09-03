@@ -20,7 +20,7 @@ export default function RecCard({ rec, index = 0 }) {
         <div style={{ color: "#6d7420", fontSize: 14, fontWeight: 500, lineHeight: "normal" }}>{rec.lift}</div>
         <div style={{ color: "#374151", fontSize: 9, fontWeight: 300, lineHeight: "normal" }}>Revenue Lift</div>
       </div>
-      <p className="abs navy" style={{ left: 17.85, top: 74, width: 381, margin: 0, fontSize: 15, lineHeight: 0.95, fontWeight: 400 }}>
+      <p className="abs navy" style={{ left: 17.85, top: 72, width: 381, margin: 0, fontSize: 15, lineHeight: 1.25, fontWeight: 500 }}>
         {rec.title}
       </p>
       <div className="abs" style={{ left: 17.85, top: 138.76, width: 266 }}>
