@@ -1,3 +1,4 @@
+// test deployment
 export default function BrandMark({ color = "white", width = 354, className = "" }) {
   const scale = width / 354;
   const fill = color === "navy" ? "#1e4a79" : "#ffffff";
