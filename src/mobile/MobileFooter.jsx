@@ -6,8 +6,8 @@ export default function MobileFooter() {
       <div className="mobile-footer-brand">
         <BrandMark color="white" width={168} />
         <p className="mobile-footer-tagline">
-          Know <span style={{ fontWeight: 500 }}>Exactly</span> What to Do{" "}
-          <span style={{ fontWeight: 500 }}>Next</span>
+          Know <span className="mobile-footer-em">Exactly</span> What to Do{" "}
+          <span className="mobile-footer-em">Next</span>
         </p>
       </div>
       <nav className="mobile-footer-col">

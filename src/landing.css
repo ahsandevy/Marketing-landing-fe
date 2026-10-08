@@ -755,6 +755,7 @@
     flex-direction: column;
     align-items: center;
     gap: 12px;
+    overflow: visible;
   }
 
   .hero-badge {
@@ -771,25 +772,27 @@
     color: #1e4a79;
     box-shadow: 1.5px 1.5px 4.5px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    overflow: visible;
   }
 
-  .hero-badge::after {
-    content: "";
+  .hero-badge-arrow {
     position: absolute;
-    width: 12px;
-    height: 12px;
-    background: #e2e2b4;
-    transform: rotate(45deg);
+    width: 24px;
+    height: 21px;
+    color: #e2e2b4;
+    pointer-events: none;
   }
 
-  .hero-badge-guard::after {
-    left: 10px;
-    bottom: -5px;
+  .hero-badge-guard .hero-badge-arrow {
+    left: -6px;
+    bottom: -11px;
+    transform: rotate(-135.13deg);
   }
 
-  .hero-badge-creative::after {
-    right: 14px;
-    top: -5px;
+  .hero-badge-creative .hero-badge-arrow {
+    right: -4px;
+    top: -13px;
+    transform: rotate(44.55deg);
   }
 
   .mobile-hero-title {
@@ -1578,6 +1581,12 @@
   .mobile-footer-tagline {
     margin: 16px 0 0;
     font-size: 14px;
+    font-weight: 400;
+    line-height: 1.4;
+  }
+
+  .mobile-footer-em {
+    font-weight: 500;
   }
 
   .mobile-footer-col {
@@ -2127,10 +2136,25 @@ body.reveal-ready .rec-card[data-reveal].reveal-in {
 
   .hero-badge {
     position: absolute;
-    height: 44px;
-    padding: 0 18px;
+    height: 31px;
+    padding: 0 12px;
     font-size: 15px;
-    box-shadow: 0 12px 24px rgba(30, 74, 121, 0.16);
+    box-shadow: 1.519px 1.519px 4.482px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-badge-arrow {
+    width: 23.739px;
+    height: 20.558px;
+  }
+
+  .hero-badge-guard .hero-badge-arrow {
+    left: -8px;
+    bottom: -13px;
+  }
+
+  .hero-badge-creative .hero-badge-arrow {
+    right: -6px;
+    top: -14px;
   }
 
   .hero-badge-guard {

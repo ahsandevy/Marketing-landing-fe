@@ -2,7 +2,7 @@ const STEPS = [
   ["01", "Detect", "Find wasted spend, saturation, and shifts others miss."],
   ["02", "Explain", "Connect the signal to a business implication"],
   ["03", "Quantify", "Model revenue lift, ROAS, CPA, and risk"],
-  ["04", "Recommendation", "Give the team a move they can improve or stimulate"],
+  ["04", "Recommend", "Give the team a move they can approve or stimulate"],
 ];
 
 export default function MobileHowItWorks() {

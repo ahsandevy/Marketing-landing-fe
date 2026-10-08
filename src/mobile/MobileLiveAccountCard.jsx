@@ -4,7 +4,7 @@ export default function MobileLiveAccountCard() {
       <div className="mobile-live-head">
         <span className="mobile-live-dot" />
         <span className="muted mobile-live-label">LIVE ACCOUNT VIEW</span>
-        <span className="muted mobile-live-label mobile-live-right">SERVIS SHOUES USD - LAST 30 DAYS</span>
+        <span className="muted mobile-live-label mobile-live-right">SERVIS SHOES USD - LAST 30 DAYS</span>
       </div>
 
       <div className="mobile-live-subhead">
@@ -25,7 +25,7 @@ export default function MobileLiveAccountCard() {
           <p className="mobile-live-rec-label">RECOMMENDATION 01</p>
           <div className="mobile-live-rec-metric">
             <span>+4,200 USD</span>
-            <span className="muted"> project lift</span>
+            <span className="muted"> projected lift</span>
           </div>
         </div>
         <p className="mobile-live-rec-title">Reallocate budget from Facebook to Instagram</p>

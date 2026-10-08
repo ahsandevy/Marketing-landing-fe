@@ -3,7 +3,7 @@ export default function LiveAccountCard() {
     <div className="abs card-shadow" style={{ left: 653, top: 663, width: 724, height: 524, borderRadius: 13 }}>
       <div className="abs" style={{ left: 40, top: 25, width: 9, height: 9, borderRadius: "50%", background: "#16a34a" }} />
       <p className="abs muted" style={{ left: 54, top: 22, margin: 0, fontSize: 12, fontWeight: 300 }}>LIVE ACCOUNT VIEW</p>
-      <p className="abs muted" style={{ left: 476, top: 22, margin: 0, fontSize: 12, fontWeight: 300, textAlign: "right", width: 208 }}>SERVIS SHOUES USD - LAST 30 DAYS</p>
+      <p className="abs muted" style={{ left: 476, top: 22, margin: 0, fontSize: 12, fontWeight: 300, textAlign: "right", width: 208 }}>SERVIS SHOES USD - LAST 30 DAYS</p>
       <p className="abs muted" style={{ left: 40, top: 68, margin: 0, fontSize: 12, fontWeight: 300 }}>AI EXECUTIVE BRIEF</p>
       <h3 className="abs navy" style={{ left: 40, top: 92, width: 398, margin: 0, fontSize: 32, fontWeight: 500, lineHeight: 1.12 }}>
         What should the
@@ -20,7 +20,7 @@ export default function LiveAccountCard() {
         <p style={{ margin: "4px 0 0", width: 474, fontSize: 12, fontWeight: 400, lineHeight: 1.36 }}>Protect ROAS by moving 50% of spend from a lower-performing placement into the stronger BOFU inventory.</p>
         <div className="abs" style={{ right: 24, top: 15, textAlign: "right" }}>
           <div style={{ color: "#6d7420", fontSize: 16, fontWeight: 500 }}>+4,200 USD</div>
-          <div style={{ fontSize: 7 }}>project lift</div>
+          <div style={{ fontSize: 7 }}>projected lift</div>
         </div>
       </div>
       <div className="abs" style={{ left: 40, top: 364, width: 644, height: 103, background: "#eceec7", border: "1px solid #c8c8a1", display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>

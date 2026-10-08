@@ -12,7 +12,7 @@ export default function MobileExecutiveBrief() {
             <span className="serif">to weekly action.</span>
           </h2>
           <p className="muted mobile-body">
-            Turn the live account into a concise executive brief: what change, what
+            Turn the live account into a concise executive brief: what changed, what
             to fix, where to scale, and the risks to manage.
           </p>
           <button className="btn pill-lime mobile-exec-btn" type="button">

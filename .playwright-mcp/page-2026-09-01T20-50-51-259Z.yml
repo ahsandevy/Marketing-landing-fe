@@ -31,7 +31,7 @@
         - /url: "#how"
       - generic [ref=e662]:
         - paragraph [ref=e664]: LIVE ACCOUNT VIEW
-        - paragraph [ref=e665]: SERVIS SHOUES USD - LAST 30 DAYS
+        - paragraph [ref=e665]: SERVIS SHOES USD - LAST 30 DAYS
         - paragraph [ref=e666]: AI EXECUTIVE BRIEF
         - heading "What should the CMO do next?" [level=3] [ref=e667]: What should theCMO do next?
         - generic [ref=e668]:
@@ -43,7 +43,7 @@
           - paragraph [ref=e674]: Protect ROAS by moving 50% of spend from a lower-performing placement into the stronger BOFU inventory.
           - generic [ref=e675]:
             - generic [ref=e676]: +4,200 USD
-            - generic [ref=e677]: project lift
+            - generic [ref=e677]: projected lift
         - generic [ref=e678]:
           - generic [ref=e679]:
             - generic [ref=e680]: ROAS
@@ -78,8 +78,8 @@
           - generic [ref=e709]: Model revenue lift, ROAS, CPA, and risk
         - generic [ref=e710]:
           - generic [ref=e711]: "04"
-          - generic [ref=e712]: Recommendation
-          - generic [ref=e713]: Give the team a move they can improve or stimulate
+          - generic [ref=e712]: Recommend
+          - generic [ref=e713]: Give the team a move they can approve or stimulate
     - generic:
       - paragraph [ref=e717]: Finding a signal in the noise!
       - generic [ref=e719]:
@@ -112,7 +112,7 @@
     - generic [ref=e744]:
       - paragraph [ref=e745]: CMO-READY OUTPUT
       - heading "From weekly reporting, to weekly action." [level=2] [ref=e746]: From weekly reporting,to weekly action.
-      - paragraph [ref=e747]: "Turn the live account into a concise executive brief: what change, what to fix, where to scale, and the risks to manage."
+      - paragraph [ref=e747]: "Turn the live account into a concise executive brief: what changed, what to fix, where to scale, and the risks to manage."
       - button "Generate a board-ready brief →" [ref=e748] [cursor=pointer]
       - generic [ref=e749]:
         - paragraph [ref=e750]: AI EXECUTIVE BRIEF
